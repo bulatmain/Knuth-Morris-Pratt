@@ -1,2 +1,1 @@
-# Knuth-Morris-Pratt
-Knuth-Morris-Pratt algorithm implementation on C++
+### C++ implementation of red black tree data structure with full pocket of tests
