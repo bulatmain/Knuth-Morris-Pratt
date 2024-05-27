@@ -1,6 +1,6 @@
 include(${PROJECT_SOURCE_DIR}/cmake/gtest.cmake)
 
-add_compile_definitions(RBTREE_TESTING)
+add_compile_definitions(KMP_TESTING)
 
 add_compile_options(-g)
 
