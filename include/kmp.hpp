@@ -30,11 +30,13 @@ namespace cust {
             ) = delete;
 
         std::vector<size_t> findAllOccurences() {
-            size_t i = 0, prev_i;
-            while (i < text.size()) {
-                prev_i = i;
-                if (foundNextOccurence(i)) {
-                    occurences.push_back(prev_i);
+            if (occurences.empty()) {
+                size_t i = 0, prev_i;
+                while (i < text.size()) {
+                    prev_i = i;
+                    if (foundNextOccurence(i)) {
+                        occurences.push_back(prev_i);
+                    }
                 }
             }
             return occurences;
